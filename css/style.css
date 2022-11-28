@@ -1,0 +1,80 @@
+body {
+  color: hsl(217, 12%, 63%);
+  font-family: Overpass;
+  background-color: hsl(216, 12%, 8%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 15px;
+}
+
+#star {
+  background-color: #262f38;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.rating-form {
+  background-image: radial-gradient(circle, #252a35, #181e28);
+  width: 370px;
+  padding: 25px;
+  border-radius: 5%;
+}
+
+h1 {
+  color:white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.radios label {
+  background-color: #262f38;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 20%;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+
+#submit-button {
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  border-radius: 50vh;
+  border-color: #181e28;
+  padding: 1em;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
