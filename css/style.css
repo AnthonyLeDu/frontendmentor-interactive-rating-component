@@ -18,11 +18,24 @@ main {
   border-radius: 50%;
 }
 
-.rating-form {
+
+.rating-form, .thank-you {
   background-image: radial-gradient(circle, #252a35, #181e28);
   width: 370px;
   padding: 30px;
   border-radius: 5%;
+}
+
+.thank-you {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you img {
+  width: 40%;
 }
 
 h1 {
