@@ -21,20 +21,15 @@ main {
 .rating-form {
   background-image: radial-gradient(circle, #252a35, #181e28);
   width: 370px;
-  padding: 25px;
+  padding: 30px;
   border-radius: 5%;
 }
 
 h1 {
-  color:white;
+  color: white;
   font-size: 1.7rem;
   font-weight: 700;
   margin: 1rem 0;
-}
-
-input[type="radio"] {
-  position: absolute;
-  opacity: 0;
 }
 
 .radios {
@@ -44,12 +39,35 @@ input[type="radio"] {
   margin: 0.5rem 0;
 }
 
+.radios input[type="radio"] {
+  position: absolute;
+  display: none;
+}
+
+.radios input[type="radio"]:checked+label {
+  background-color: #778091;
+  color: white;
+}
+
 .radios label {
+  cursor: pointer;
   background-color: #262f38;
-  padding: 1rem;
+  width: 45px;
+  height: 45px;
+  padding: 15px 0 0;
   border-radius: 50%;
-  width: 20%;
   text-align: center;
+}
+
+
+.radios label--active {
+  background-color: #7c8898;
+  color: white;
+}
+
+.radios label:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
 }
 
 p {
@@ -68,6 +86,12 @@ p {
   color: white;
   font-weight: 700;
   letter-spacing: 0.2em;
+}
+
+#submit-button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
 }
 
 .attribution {
