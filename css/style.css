@@ -19,22 +19,21 @@ main {
 }
 
 
-.rating-form, .thank-you {
+#rating-form, #thank-you {
   background-image: radial-gradient(circle, #252a35, #181e28);
   width: 370px;
   padding: 30px;
   border-radius: 5%;
 }
 
-.thank-you {
+#thank-you {
   display: none;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   align-items: center;
 }
 
-.thank-you img {
+#thank-you img {
   width: 40%;
 }
 
@@ -105,6 +104,15 @@ p {
   background-color: white;
   color: hsl(25, 97%, 53%);
   cursor: pointer;
+}
+
+
+#user-rating-feedback {
+  margin: 1.5rem 0 0.8rem;
+  padding: 0.5em 1em;
+  color: hsl(25, 97%, 53%);
+  border-radius: 50vw;
+  background-color: #262f38;
 }
 
 .attribution {
